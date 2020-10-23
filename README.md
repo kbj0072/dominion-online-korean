@@ -16,6 +16,20 @@ Open a new tab in Chromeand thenclick Appsand thenclick the app or extension. Ma
 If needed, make changes in the manifest.json file, host the app folder, and retest it. Repeat until the app or extension works correctly.
 
 
+<확장 프로그램 설치 방법 (from https://support.google.com/chrome/a/answer/2714278?hl=ko)>
+ - 개발자는 앱 또는 확장 프로그램이 Chrome 브라우저 또는 Chrome OS를 실행하는 기기에서 작동하는지 테스트할 수 있습니다.
+필요한 테스트 기기 유형을 선택합니다.
+앱: Chrome 기기에서 Google 계정에 로그인합니다.
+확장 프로그램: Chrome 기기 또는 Windows®, Mac® 또는 Linux® 컴퓨터의 Chrome 브라우저에서 Google 계정에 로그인합니다.
+테스트 기기에서 앱 또는 확장 프로그램 폴더를 저장합니다.
+chrome://extensions/로 이동합니다.
+오른쪽 상단에서 개발자 모드를 사용 설정합니다.
+압축해제된 확장 프로그램을 로드합니다를 클릭합니다.
+앱 또는 확장 프로그램 폴더를 찾아 선택합니다.
+Chrome 다음에서 새 탭을 열고 앱을 클릭한 다음 다음 앱 또는 확장 프로그램을 클릭합니다. 올바르게 로드되고 작동하는지 확인합니다.
+필요한 경우 manifest.json 파일을 변경하고 앱 폴더를 호스팅한 다음 다시 테스트합니다. 앱 또는 확장 프로그램이 올바르게 작동할 때까지 반복합니다.
+
+
 <Version 0.0.1>
  - Translate 26 cards in Base deck
    > Cellar(저장고), Gardens(정원), Moneylender(대금업자), Bandit(노상강도), Council Room(회의실)
