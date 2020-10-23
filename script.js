@@ -76,9 +76,9 @@
 	dictBottom['Action'] = '액션';
 	dictBottom['Action - Reaction'] = '액션 - 반응';
 	dictBottom['Action - Attack'] = '액션 - 공격';
-	
+
 	var kingdom = document.getElementsByClassName('kingdom-viewer-card-container')
-	
+
 	if (kingdom.length == 0)
 		alert("Error: No card data...");
 	else {
@@ -98,7 +98,16 @@
 				bottom_name[0].innerText = changed_bottom;
 		}
 	}
+
+
+	var mini_card_list = document.getElementsByClassName("mini-card");
+	for (var i=0; i< mini_card_list.length; ++i) {
+		mini_card_list[i].addEventListener('contextmenu', full_card_translate, false)		
+	}
+
 	
+	
+
 	function full_card_translate() {
 		var full_card = document.getElementsByClassName('full-card')
 		for(var i=0; i< full_card.length; ++i) {
