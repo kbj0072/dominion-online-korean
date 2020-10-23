@@ -1,7 +1,7 @@
 # Dominion-online-korean(도미니언 온라인 한글패치)
 
 <div>
-<img width="200" src="https://user-images.githubusercontent.com/73340631/96996897-a3e04500-156b-11eb-88f9-87887c8e5755.png">
+<img width="100%" src="https://user-images.githubusercontent.com/73340631/96996897-a3e04500-156b-11eb-88f9-87887c8e5755.png">
 </div>
 
 Korean patch for dominion online (https://dominion.games/)
