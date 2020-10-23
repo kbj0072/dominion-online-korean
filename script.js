@@ -47,6 +47,7 @@
 	dictName['Militia'] = '민병대';
 	dictText['Militia'] = '<div style="position:relative; top:-15px;"><div style="font-weight: bold;"><div style="display:inline;"><div style="display:inline; font-size:28px;">+      </div></div><br></div></div><div style="line-height:22px;"><div style="display:inline;"><div style="display:inline; font-size:22px;">다른 플레이어들은 각자</div></div><br><div style="display:inline;"><div style="display:inline; font-size:22px;">손에 든 카드를 3장까지만</div></div><br><div style="display:inline;"><div style="display:inline; font-size:22px;">남기고 모두 버립니다.</div></div><br></div><div class="card-text-coin-icon" style="transform:scale(0.24); top:-15px; display: inline;left:130px;"><div class="card-text-coin-text-container" style="display:inline;"><div class="card-text-coin-text" style="color: black; display:inline; top:8px;">2</div></div></div>';
 	dictName['Poacher'] = '밀렵꾼';
+	
 	dictText['Poacher'] = '<div style="position:relative; top:0px;"><div style="font-weight: bold;"><div style="line-height:28px;"><div style="display:inline;"><div style="display:inline; font-size:28px;">+ 카드 1장</div></div><br><div style="display:inline;"><div style="display:inline; font-size:28px;">+ 액션 1번</div></div><br><div style="display:inline;"><div style="display:inline; font-size:28px;">+    </div></div><br></div></div></div><div style="position:relative; top:5px;"><div style="line-height:22px;"><div style="display:inline;"><div style="display:inline; font-size:22px;">비어있는 공급처 더미당</div></div><br><div style="display:inline;"><div style="display:inline; font-size:22px;">카드 1장을 버립니다.</div></div><br></div></div><div class="card-text-coin-icon" style="transform:scale(0.22); top:58px; display: inline;left:138px;"><div class="card-text-coin-text-container" style="display:inline;"><div class="card-text-coin-text" style="color: black; display:inline; top:8px;">1</div></div></div>';
 	dictName['Throne Room'] = '알현실';
 	dictText['Throne Room'] = '<div style="position:relative; top:7px;"><div style="line-height:22px;"><div style="display:inline;"><div style="display:inline; font-size:22px;">손에 있는 액션 카드 1장을</div></div><br><div style="display:inline;"><div style="display:inline; font-size:22px;">골라 2번 사용할 수 있음.</div></div><br></div></div>';
@@ -82,6 +83,22 @@
 			  card_text[0].innerHTML = dictText[original_name];
 			}
 			var bottom_name = kingdom[i].getElementsByClassName('types-text-full');
+			var changed_bottom = dictBottom[bottom_name[0].innerText.trim()];
+			if ( changed_bottom != null)
+			  bottom_name[0].innerText = changed_bottom;
+		  }
+		  
+		  var full_card = document.getElementsByClassName('full-card-text-container')
+		  for(var i=0; i< full_card.length; ++i) {
+			var card_name = full_card[i].getElementsByClassName('full-card-name');
+			var original_name = card_name[0].innerText.trim();
+			var changed_name = dictName[original_name];
+			if ( changed_name != null && english.test(original_name) ) {
+			  card_name[0].innerText = changed_name;
+			  var card_text = full_card[i].getElementsByClassName('card-text');
+			  card_text[0].innerHTML = dictText[original_name];
+			}
+			var bottom_name = full_card[i].getElementsByClassName('types-text-full');
 			var changed_bottom = dictBottom[bottom_name[0].innerText.trim()];
 			if ( changed_bottom != null)
 			  bottom_name[0].innerText = changed_bottom;
