@@ -87,21 +87,23 @@
 			if ( changed_bottom != null)
 			  bottom_name[0].innerText = changed_bottom;
 		  }
-		  
-		  var full_card = document.getElementsByClassName('full-card-text-container')
-		  for(var i=0; i< full_card.length; ++i) {
+	  }
+	
+	function full_card_translate() {
+		var full_card = document.getElementsByClassName('full-card')
+		for(var i=0; i< full_card.length; ++i) {
 			var card_name = full_card[i].getElementsByClassName('full-card-name');
 			var original_name = card_name[0].innerText.trim();
 			var changed_name = dictName[original_name];
 			if ( changed_name != null && english.test(original_name) ) {
-			  card_name[0].innerText = changed_name;
-			  var card_text = full_card[i].getElementsByClassName('card-text');
-			  card_text[0].innerHTML = dictText[original_name];
-			}
-			var bottom_name = full_card[i].getElementsByClassName('types-text-full');
-			var changed_bottom = dictBottom[bottom_name[0].innerText.trim()];
-			if ( changed_bottom != null)
-			  bottom_name[0].innerText = changed_bottom;
-		  }
-	  }
+				card_name[0].innerText = changed_name;
+				var card_text = full_card[i].getElementsByClassName('card-text');
+				card_text[0].innerHTML = dictText[original_name];
+		}
+		var bottom_name = full_card[i].getElementsByClassName('types-text-full');
+		var changed_bottom = dictBottom[bottom_name[0].innerText.trim()];
+		if ( changed_bottom != null)
+			bottom_name[0].innerText = changed_bottom;
+		}
+	}
 })();
