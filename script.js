@@ -62,6 +62,16 @@
 	dictName['Smithy'] = '대장장이';
 	dictText['Smithy'] = '<div style="position:relative; top:-7px;"><div style="font-weight: bold;"><div style="line-height:28px;"><div style="display:inline;"><div style="display:inline; font-size:28px;">+ 카드 3장</div></div><br></div></div></div>';
 
+
+	//장막 2nd
+	dictName['Courtyard'] = '안마당'
+	dictText['Courtyard'] = '<div style="position:relative; top:0px;"><div style="font-weight: bold;"><div style="line-height:28px;"><div style="display:inline;"><div style="display:inline; font-size:28px;">+카드 3장</div></div><br></div></div></div><div style="position:relative; top:10px;"><div style="line-height:22px;"><div style="display:inline;"><div style="display:inline; font-size:22px;">손에서 카드 한 장을 골라</div></div><br><div style="display:inline;"><div style="display:inline; font-size:22px;">당신의 덱 위에 올려놓는다.</div></div><br></div></div>'
+	dictName['Conspirator'] = '공모자'
+	dictText['Conspirator'] = '<div style="position:relative; top:0px;"><div style="font-weight: bold;"><div style="line-height:28px;"><div style="display:inline;"><div style="display:inline; font-size:28px;">+      </div></div><br></div></div></div><div style="position:relative; top:10px;"><div style="line-height:22px;"><div style="display:inline;"><div style="display:inline; font-size:17px;">만약 당신이 이번 턴에 지금까지</div></div><br><div style="display:inline;"><div style="display:inline; font-size:17px;">3장 이상의 액션 카드를 사용했다면,</div></div><br><div style="display:inline;"><div style="display:inline; font-size:21px;"><div style="display: inline; font-weight: bold;">+카드 1장</div> and <div style="display: inline; font-weight: bold;">+액션 1번</div>.</div></div><br></div></div><div class="card-text-coin-icon" style="transform:scale(0.24); top:-1px; display: inline;left:130px;"><div class="card-text-coin-text-container" style="display:inline;"><div class="card-text-coin-text" style="color: black; display:inline; top:8px;">2</div></div></div>'
+	dictName['Courtier'] = '신하'
+	dictText['Courtier'] = '<div style="position:relative; top:15px;"><div style="line-height:21px;"><div style="display:inline;"><div style="display:inline; font-size:17px;">손에서 카드 1장을 공개한다.</div></div><br><div style="display:inline;"><div style="display:inline; font-size:17px;">그 카드가 가진 종류만큼 </div></div><br><div style="display:inline;"><div style="display:inline; font-size:17px;">아래 4가지 중 하나씩 고른다:</div></div><br><div style="display:inline;"><div style="display:inline; font-size:17px;"><div style="display: inline; font-weight: bold;">+액션 1번</div>;<div style="display: inline; font-weight: bold;">+구매 1번</div>;</div></div><br><div style="display:inline;"><div style="display:inline; font-size:17px;"><div style="display: inline; font-weight: bold;">+</div>     ; 금 1장을 얻는다.</div></div><br><div style="display:inline;"><div style="display:inline; font-size:17px;">모든 선택은 서로달라야 한다.</div></div><br></div></div><div class="card-text-coin-icon" style="transform:scale(0.15); top:121px; display: inline;left:68px;"><div class="card-text-coin-text-container" style="display:inline;"><div class="card-text-coin-text" style="color: black; display:inline; top:8px;">3</div></div></div>'
+
+
 	dictBottom['Victory'] = '승점';
 	dictBottom['Action'] = '액션';
 	dictBottom['Action - Reaction'] = '액션 - 반응';
