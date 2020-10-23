@@ -76,28 +76,28 @@
 	dictBottom['Action'] = '액션';
 	dictBottom['Action - Reaction'] = '액션 - 반응';
 	dictBottom['Action - Attack'] = '액션 - 공격';
-  
-	  var kingdom = document.getElementsByClassName('kingdom-viewer-card-container')
-		  
-	  if (kingdom.length == 0)
-		  alert("Error: No card data...");
-	  else {
-		  var kingdom = document.getElementsByClassName('kingdom-viewer-card-container')
-		  for(var i=0; i< kingdom.length; ++i) {
+	
+	var kingdom = document.getElementsByClassName('kingdom-viewer-card-container')
+	
+	if (kingdom.length == 0)
+		alert("Error: No card data...");
+	else {
+		var kingdom = document.getElementsByClassName('kingdom-viewer-card-container')
+		for(var i=0; i< kingdom.length; ++i) {
 			var card_name = kingdom[i].getElementsByClassName('full-card-name');
 			var original_name = card_name[0].innerText.trim();
 			var changed_name = dictName[original_name];
 			if ( changed_name != null && english.test(original_name) ) {
-			  card_name[0].innerText = changed_name;
-			  var card_text = kingdom[i].getElementsByClassName('card-text');
-			  card_text[0].innerHTML = dictText[original_name];
+				card_name[0].innerText = changed_name;
+				var card_text = kingdom[i].getElementsByClassName('card-text');
+				card_text[0].innerHTML = dictText[original_name];
 			}
 			var bottom_name = kingdom[i].getElementsByClassName('types-text-full');
 			var changed_bottom = dictBottom[bottom_name[0].innerText.trim()];
 			if ( changed_bottom != null)
-			  bottom_name[0].innerText = changed_bottom;
-		  }
-	  }
+				bottom_name[0].innerText = changed_bottom;
+		}
+	}
 	
 	function full_card_translate() {
 		var full_card = document.getElementsByClassName('full-card')
@@ -109,11 +109,11 @@
 				card_name[0].innerText = changed_name;
 				var card_text = full_card[i].getElementsByClassName('card-text');
 				card_text[0].innerHTML = dictText[original_name];
-		}
-		var bottom_name = full_card[i].getElementsByClassName('types-text-full');
-		var changed_bottom = dictBottom[bottom_name[0].innerText.trim()];
-		if ( changed_bottom != null)
-			bottom_name[0].innerText = changed_bottom;
+			}
+			var bottom_name = full_card[i].getElementsByClassName('types-text-full');
+			var changed_bottom = dictBottom[bottom_name[0].innerText.trim()];
+			if ( changed_bottom != null)
+				bottom_name[0].innerText = changed_bottom;
 		}
 	}
 })();
