@@ -67,6 +67,8 @@
 	dictText['Silver'] = "";
 	dictName['Gold'] = '금';
 	dictText['Gold'] = "";
+	dictName['Curse'] = '저주';
+	dictText['Curse'] = "";
 
 
 	//장막 2nd
@@ -83,6 +85,7 @@
 	dictBottom['Action - Reaction'] = '액션 - 반응';
 	dictBottom['Action - Attack'] = '액션 - 공격';
 	dictBottom['Treasure'] = '재물'
+	dictBottom['Curse'] = '저주'
 
 	var kingdom = document.getElementsByClassName('kingdom-viewer-card-container')
 
