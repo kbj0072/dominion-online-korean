@@ -41,7 +41,7 @@ Chrome 다음에서 새 탭을 열고 앱을 클릭한 다음 다음 앱 또는 
 
 
 <Version 0.0.1>
- - Translate 26 cards in Base deck
+ - Translate 26 cards in Base deck (26장의 Base 덱만 한글화된 상태)
    > Cellar(저장고), Gardens(정원), Moneylender(대금업자), Bandit(노상강도), Council Room(회의실)
    > Festival(축제), Moat(해자), Merchant(무역상), Vassal(봉신), Workshop(작업장)
    > Laboratory(실험실), Library(도서관), Market(시장), Mine(광산), Artisan(장인)
@@ -49,9 +49,9 @@ Chrome 다음에서 새 탭을 열고 앱을 클릭한 다음 다음 앱 또는 
    > Throne Room(알현실), Sentry(보초병), Witch(마녀), Village(마을), Remodel(개조)
    > Smithy(대장장이)
    
- - 4 types of card
+ - 4 types of card (4가지의 카드 종류)
    > Victory(승점), Action(액션), Action - Reaction(액션 - 반응), Action - Attack(액션 - 공격)
    
- - Not yet tested by others
+ - Not yet tested by others (아직 다른 사람에 의해 테스트된 바 없음)
  
  
