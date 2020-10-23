@@ -61,6 +61,12 @@
 	dictText['Remodel'] = '<div style="position:relative; top:10px;"><div style="line-height:22px;"><div style="display:inline;"><div style="display:inline; font-size:22px;">손에 있는 카드 1장을 폐기</div></div><br><div style="display:inline;"><div style="display:inline; font-size:22px;">합니다. 폐기한 카드보다</div></div><br><div style="display:inline;"><div style="display:inline; font-size:22px;">    원 높은 한도까지 원하는</div></div><br><div style="display:inline;"><div style="display:inline; font-size:22px;">카드 1장을 얻습니다.</div></div><br></div></div><div class="card-text-coin-icon" style="transform:scale(0.2); top:56px; display: inline;left:10px;"><div class="card-text-coin-text-container" style="display:inline;"><div class="card-text-coin-text" style="color: black; display:inline; top:8px;">2</div></div></div>';
 	dictName['Smithy'] = '대장장이';
 	dictText['Smithy'] = '<div style="position:relative; top:-7px;"><div style="font-weight: bold;"><div style="line-height:28px;"><div style="display:inline;"><div style="display:inline; font-size:28px;">+ 카드 3장</div></div><br></div></div></div>';
+	dictName['Copper'] = '동';
+	dictText['Copper'] = "";
+	dictName['Silver'] = '은';
+	dictText['Silver'] = "";
+	dictName['Gold'] = '금';
+	dictText['Gold'] = "";
 
 
 	//장막 2nd
@@ -76,6 +82,7 @@
 	dictBottom['Action'] = '액션';
 	dictBottom['Action - Reaction'] = '액션 - 반응';
 	dictBottom['Action - Attack'] = '액션 - 공격';
+	dictBottom['Treasure'] = '재물'
 
 	var kingdom = document.getElementsByClassName('kingdom-viewer-card-container')
 
@@ -90,7 +97,9 @@
 			if ( changed_name != null && english.test(original_name) ) {
 				card_name[0].innerText = changed_name;
 				var card_text = kingdom[i].getElementsByClassName('card-text');
-				card_text[0].innerHTML = dictText[original_name];
+				var new_text = dictText[original_name];
+				if (card_text != null && new_text != null)
+					card_text[0].innerHTML = new_text;
 			}
 			var bottom_name = kingdom[i].getElementsByClassName('types-text-full');
 			var changed_bottom = dictBottom[bottom_name[0].innerText.trim()];
@@ -102,7 +111,7 @@
 
 	var mini_card_list = document.getElementsByClassName("mini-card");
 	for (var i=0; i< mini_card_list.length; ++i) {
-		mini_card_list[i].addEventListener('contextmenu', full_card_translate, false)		
+		mini_card_list[i].addEventListener('contextmenu', function(){setTimeout(full_card_translate,10);}, false)		
 	}
 
 	
@@ -117,7 +126,9 @@
 			if ( changed_name != null && english.test(original_name) ) {
 				card_name[0].innerText = changed_name;
 				var card_text = full_card[i].getElementsByClassName('card-text');
-				card_text[0].innerHTML = dictText[original_name];
+				var new_text = dictText[original_name];
+				if (card_text != null && new_text != null)
+					card_text[0].innerHTML = new_text;
 			}
 			var bottom_name = full_card[i].getElementsByClassName('types-text-full');
 			var changed_bottom = dictBottom[bottom_name[0].innerText.trim()];
