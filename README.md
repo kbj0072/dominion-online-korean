@@ -1,6 +1,12 @@
-# dominion-online-korean
+# Dominion-online-korean(도미니언 온라인 한글패치)
 
-korean patch for dominion online (test version, only kingdom cards)
+Korean patch for dominion online (https://dominion.games/)
+ - Chrome-extension, click the extension for translating
+ - test version, Since only Kingdom cards are changed to Korean, click the "Kingdom" button on the right to check the usage of each card.
+ 
+도미니언 온라인의 한글 패치 (https://dominion.games/)
+ - 크롬 확장 프로그램 버전, 설치 후 게임 중에 확장 프로그램을 클릭하면 한글화 됨
+ - 테스트 버전, 킹덤 카드만 한글화되므로 게임 시작 전에 오른쪽의 Kingdom 버튼을 눌러 확인
 
 <How to install (from https://support.google.com/chrome/a/answer/2714278?hl=en)>
  - As a developer, you can test your app or extension to make sure it works in Chrome Browser or on a device running Chrome OS.
