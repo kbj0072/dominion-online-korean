@@ -71,14 +71,27 @@ function full_card_translate() {
 	}
 }
 
-chrome.storage.local.get(["timer_state"], function(items) {
+chrome.storage.local.get(["timer_state", "timerId"], function(items) {
 	if (typeof items.timer_state == 'undefined') {
+		var temp_items = {"timer_state": false, "timerId": 0};
+		chrome.storage.local.set(temp_items, function() {});
+		items = temp_items;
+	}
+	
+	if (items.timer_state == false) {
 		var mini_card_list = document.getElementsByClassName("mini-card");
 		for (var i=0; i< mini_card_list.length; ++i) {
 			mini_card_list[i].addEventListener('contextmenu', function(){setTimeout(full_card_translate,10);}, false)		
 		}
-		timerId = setInterval(check_play_cards, 300);
-		var temp_items = {"timer_state": true};
+		var id = setInterval(check_play_cards, 300);
+		var temp_items = {"timer_state": true, "timerId": id};
 		chrome.storage.local.set(temp_items, function() {});
+		alert("On!");
+	}
+	else {
+		clearInterval(items.timerId);
+		var temp_items = {"timer_state": false, "timerId": 0};
+		chrome.storage.local.set(temp_items, function() {});
+		alert("Off!");
 	}
  });
