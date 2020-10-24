@@ -86,12 +86,12 @@ chrome.storage.local.get(["timer_state", "timerId"], function(items) {
 		var id = setInterval(check_play_cards, 300);
 		var temp_items = {"timer_state": true, "timerId": id};
 		chrome.storage.local.set(temp_items, function() {});
-		alert("On!");
+		//alert("On!");
 	}
 	else {
-		clearInterval(items.timerId);
-		var temp_items = {"timer_state": false, "timerId": 0};
-		chrome.storage.local.set(temp_items, function() {});
-		alert("Off!");
+		//clearInterval(items.timerId);
+		//var temp_items = {"timer_state": false, "timerId": 0};
+		//chrome.storage.local.set(temp_items, function() {});
+		//alert("Off!");
 	}
  });
