@@ -9,6 +9,7 @@
       "intrigue.js",
       "seaside.js",
       "prosperity.js",
+	  "empires.js",
       "background.js"
     ],
     "persistent": true

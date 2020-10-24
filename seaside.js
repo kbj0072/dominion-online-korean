@@ -91,7 +91,8 @@ chrome.browserAction.onClicked.addListener(function (tab) {
 		dictText['Wharf'] = '<div style="position:relative; top:7px;"><div style="line-height:23px;"><div style="display:inline;"><div style="display:inline; font-size:22px;">지금과 다음 턴에</div></div><br><div style="display:inline;"><div style="display:inline; font-size:22px;"><div style="display: inline; font-weight: bold;">+ 카드 2장, </div><div style="display: inline; font-weight: bold;">+ 구입 1번</div>.</div></div><br></div></div>';
 
 		dictBottom['Action - Duration'] = '액션 - 지속';
-
+		
+		console.log("Load Seaside info...");
 		`
 	});
 });

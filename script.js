@@ -53,6 +53,34 @@ else {
 	//console.log("No Mini card...");
 }
 
+function landscape_translate() {
+	var landscape = document.getElementsByClassName("landscape");
+	for(var i=0; i< landscape.length; ++i) {
+		var card_name = landscape[i].getElementsByClassName('landscape-name');
+		var original_name = card_name[0].innerText.trim();
+		var changed_name = dictName[original_name];
+		//console.log(original_name + " >> " + changed_name);
+		if ( changed_name != null && english.test(original_name) ) {
+			card_name[0].innerText = changed_name;
+			var card_text = landscape[i].getElementsByClassName('landscape-text');
+			var new_text = dictText[original_name];
+			//console.log(card_text);
+			if (card_text.length > 0 && new_text != null)
+				card_text[0].innerHTML = new_text;
+		}
+	}
+}
+
+var landscape = document.getElementsByClassName("landscape");
+
+if (landscape.length > 0) {
+	//console.log("landscape count: " + landscape.length);
+	for(var i=0; i< landscape.length; ++i) {
+		landscape[i].addEventListener('contextmenu', function(){setTimeout(landscape_translate, timeout_delay);}, false);
+	}
+	landscape_translate();
+}
+
 function check_play_cards() {
 	var my_visible_hand = document.getElementsByClassName('my-visible-hand');
 	for(var i=0; i< my_visible_hand.length; ++i) {
@@ -66,7 +94,7 @@ function check_play_cards() {
 				card_name[0].innerText = changed_name;
 				var card_text = full_card[0].getElementsByClassName('card-text');
 				var new_text = dictText[original_name];
-				if (card_text != null && new_text != null)
+				if (card_text.length > 0 && new_text != null)
 					card_text[0].innerHTML = new_text;
 			}
 			var bottom_name = full_card[0].getElementsByClassName('types-text-full');
@@ -88,7 +116,7 @@ function full_card_translate() {
 			card_name[0].innerText = changed_name;
 			var card_text = full_card[i].getElementsByClassName('card-text');
 			var new_text = dictText[original_name];
-			if (card_text != null && new_text != null)
+			if (card_text.length > 0 && new_text != null)
 				card_text[0].innerHTML = new_text;
 		}
 		var bottom_name = full_card[i].getElementsByClassName('types-text-full');

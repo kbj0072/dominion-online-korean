@@ -92,7 +92,8 @@ chrome.browserAction.onClicked.addListener(function (tab) {
 		dictText['Platinum'] = "";
 		dictName['Colony'] = '식민지';
 		dictText['Colony'] = "";
-
+		
+		console.log("Load Prosperity info...");
 		`
 	});
 });

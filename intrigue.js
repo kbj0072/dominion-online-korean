@@ -114,6 +114,8 @@ chrome.browserAction.onClicked.addListener(function (tab) {
 		
 		dictBottom['Treasure - Victory'] = '재화 - 승점';
 		dictBottom['Action - Victory'] = '액션 - 승점';
+		
+		console.log("Load Intrigue info...");
 		`
 	});
 });

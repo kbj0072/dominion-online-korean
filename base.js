@@ -92,6 +92,7 @@ chrome.browserAction.onClicked.addListener(function (tab) {
 		dictBottom['Treasure'] = '재물'
 		dictBottom['Curse'] = '저주'
 		
+		console.log("Load Base info...");
 		`
 	});
 });
