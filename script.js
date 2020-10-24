@@ -29,12 +29,6 @@ else {
 	}
 }
 
-
-var mini_card_list = document.getElementsByClassName("mini-card");
-for (var i=0; i< mini_card_list.length; ++i) {
-	mini_card_list[i].addEventListener('contextmenu', function(){setTimeout(full_card_translate,10);}, false)		
-}
-
 function check_play_cards() {
 	var my_visible_hand = document.getElementsByClassName('my-visible-hand')
 	for(var i=0; i< my_visible_hand.length; ++i) {
@@ -56,8 +50,6 @@ function check_play_cards() {
 	}
 }
 
-timerId = setInterval(check_play_cards, 300);
-
 function full_card_translate() {
 	var card_study_container = document.getElementsByClassName('card-study-container')[0]
 	var full_card = card_study_container.getElementsByClassName('full-card')
@@ -78,3 +70,15 @@ function full_card_translate() {
 			bottom_name[0].innerText = changed_bottom;
 	}
 }
+
+chrome.storage.local.get(["timer_state"], function(items) {
+	if (typeof items.timer_state == 'undefined') {
+		var mini_card_list = document.getElementsByClassName("mini-card");
+		for (var i=0; i< mini_card_list.length; ++i) {
+			mini_card_list[i].addEventListener('contextmenu', function(){setTimeout(full_card_translate,10);}, false)		
+		}
+		timerId = setInterval(check_play_cards, 300);
+		var temp_items = {"timer_state": true};
+		chrome.storage.local.set(temp_items, function() {});
+	}
+ });
