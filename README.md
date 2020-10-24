@@ -6,11 +6,11 @@
 
 Korean patch for dominion online (https://dominion.games/)
  - Chrome-extension, click the extension for translating
- - test version, Since only Kingdom cards are changed to Korean, click the "Kingdom" button on the right to check the usage of each card.
+ - test version, Kingdom cards and enlarged cards displayed by right-clicking are localized.
  
 도미니언 온라인의 한글 패치 (https://dominion.games/)
- - 크롬 확장 프로그램 버전, 설치 후 게임 중에 확장 프로그램을 클릭하면 한글화 됨
- - 테스트 버전, 킹덤 카드만 한글화되므로 게임 시작 전에 오른쪽의 Kingdom 버튼을 눌러 확인
+ - 크롬 확장 프로그램 버전, 설치 후 게임 중에 확장 프로그램을 클릭하면 한글화가 적용됨
+ - 테스트 버전, 킹덤 카드와 마우스 오른쪽 클릭으로 나오는 확대된 카드가 한글화 됨
 
 <How to install (from https://support.google.com/chrome/a/answer/2714278?hl=en)>
  - As a developer, you can test your app or extension to make sure it works in Chrome Browser or on a device running Chrome OS.
@@ -39,6 +39,19 @@ chrome://extensions/로 이동합니다.
 Chrome 다음에서 새 탭을 열고 앱을 클릭한 다음 다음 앱 또는 확장 프로그램을 클릭합니다. 올바르게 로드되고 작동하는지 확인합니다.
 필요한 경우 manifest.json 파일을 변경하고 앱 폴더를 호스팅한 다음 다시 테스트합니다. 앱 또는 확장 프로그램이 올바르게 작동할 때까지 반복합니다.
 
+<Version 0.0.2>
+ - Translate 7 cards in Base deck
+   > Copper(동), Silver(은), Gold(금), Curse(저주), Province(속주), Duchy(공작령), Estate(사유지)
+ - Translate 26 cards in Intrigue deck
+   > Courtyard(안마당), Conspirator(공모자), Courtier(신하), Baron(남작), Bridge(다리)
+   > Diplomat(외교관), Duke(공작), Harem(하렘), Nobles(귀족), Ironworks(철공소)
+   > Lurker(잠복자), Masquerade(가면무도회), Mill(방앗간), Mining Village(광산촌), Minion(하수인)
+   > Patrol(순찰대), Pawn(졸개), Replace(교체), Secret Passage(비밀 통로), Shanty Town(빈민가)
+   > Steward(집사), Swindler(사기꾼), Torturer(고문기술자), Trading Post(교역소), Upgrade(개선)
+   > Wishing Well(소원의 우물)
+   
+ - 2 types of card (4가지의 카드 종류)
+   > Treasure - Victory(재화 - 승점), Action - Victory(액션 - 승점)
 
 <Version 0.0.1>
  - Translate 26 cards in Base deck (26장의 Base 덱만 한글화된 상태)
@@ -51,7 +64,5 @@ Chrome 다음에서 새 탭을 열고 앱을 클릭한 다음 다음 앱 또는 
    
  - 4 types of card (4가지의 카드 종류)
    > Victory(승점), Action(액션), Action - Reaction(액션 - 반응), Action - Attack(액션 - 공격)
-   
- - Not yet tested by others (아직 다른 사람에 의해 테스트된 바 없음)
  
  
