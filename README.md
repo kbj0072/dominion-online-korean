@@ -40,9 +40,9 @@ Chrome 다음에서 새 탭을 열고 앱을 클릭한 다음 다음 앱 또는 
 필요한 경우 manifest.json 파일을 변경하고 앱 폴더를 호스팅한 다음 다시 테스트합니다. 앱 또는 확장 프로그램이 올바르게 작동할 때까지 반복합니다.
 
 <Version 0.0.2>
- - Translate 7 cards in Base deck
+ - Translate 7 cards in Base deck (7장의 기본 덱 한글화)
    > Copper(동), Silver(은), Gold(금), Curse(저주), Province(속주), Duchy(공작령), Estate(사유지)
- - Translate 26 cards in Intrigue deck
+ - Translate 26 cards in Intrigue deck (26장의 장막 덱 한글화)
    > Courtyard(안마당), Conspirator(공모자), Courtier(신하), Baron(남작), Bridge(다리)
    > Diplomat(외교관), Duke(공작), Harem(하렘), Nobles(귀족), Ironworks(철공소)
    > Lurker(잠복자), Masquerade(가면무도회), Mill(방앗간), Mining Village(광산촌), Minion(하수인)
@@ -50,11 +50,11 @@ Chrome 다음에서 새 탭을 열고 앱을 클릭한 다음 다음 앱 또는 
    > Steward(집사), Swindler(사기꾼), Torturer(고문기술자), Trading Post(교역소), Upgrade(개선)
    > Wishing Well(소원의 우물)
    
- - 2 types of card (4가지의 카드 종류)
+ - 2 types of card (2가지의 카드 종류)
    > Treasure - Victory(재화 - 승점), Action - Victory(액션 - 승점)
 
 <Version 0.0.1>
- - Translate 26 cards in Base deck (26장의 Base 덱만 한글화된 상태)
+ - Translate 26 cards in Base deck (26장의 기본 덱 한글화)
    > Cellar(저장고), Gardens(정원), Moneylender(대금업자), Bandit(노상강도), Council Room(회의실)
    > Festival(축제), Moat(해자), Merchant(무역상), Vassal(봉신), Workshop(작업장)
    > Laboratory(실험실), Library(도서관), Market(시장), Mine(광산), Artisan(장인)
