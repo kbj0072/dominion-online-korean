@@ -78,20 +78,16 @@ chrome.storage.local.get(["timer_state", "timerId"], function(items) {
 		items = temp_items;
 	}
 	
-	if (items.timer_state == false) {
-		var mini_card_list = document.getElementsByClassName("mini-card");
-		for (var i=0; i< mini_card_list.length; ++i) {
-			mini_card_list[i].addEventListener('contextmenu', function(){setTimeout(full_card_translate,10);}, false)		
-		}
-		var id = setInterval(check_play_cards, 300);
-		var temp_items = {"timer_state": true, "timerId": id};
-		chrome.storage.local.set(temp_items, function() {});
-		//alert("On!");
+	if (items.timer_state == true) {
+		clearInterval(items.timerId);
+		console.log("clearInterval: " + items.timerId);
 	}
-	else {
-		//clearInterval(items.timerId);
-		//var temp_items = {"timer_state": false, "timerId": 0};
-		//chrome.storage.local.set(temp_items, function() {});
-		//alert("Off!");
+	var mini_card_list = document.getElementsByClassName("mini-card");
+	for (var i=0; i< mini_card_list.length; ++i) {
+		mini_card_list[i].addEventListener('contextmenu', function(){setTimeout(full_card_translate,10);}, false)		
 	}
+	var id = setInterval(check_play_cards, 300);
+	console.log("setInterval: " + id);
+	var temp_items = {"timer_state": true, "timerId": id};
+	chrome.storage.local.set(temp_items, function() {});
  });
