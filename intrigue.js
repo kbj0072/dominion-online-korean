@@ -111,6 +111,9 @@ chrome.browserAction.onClicked.addListener(function (tab) {
 
 		dictName['Wishing Well'] = '소원의 우물'
 		dictText['Wishing Well'] = '<div style="position:relative; top:0px;"><div style="font-weight: bold;"><div style="line-height:25px;"><div style="display:inline;"><div style="display:inline; font-size:28px;">+카드 1장</div></div><br><div style="display:inline;"><div style="display:inline; font-size:28px;">+액션 1번</div></div><br></div></div></div><div style="position:relative; top:5px;"><div style="line-height:22px;"><div style="display:inline;"><div style="display:inline; font-size:22px;">카드 이름 하나를 말하고, </div></div><br><div style="display:inline;"><div style="display:inline; font-size:22px;">덱에서 카드 한 장을 공개한다. </div></div><br><div style="display:inline;"><div style="display:inline; font-size:22px;">맞추면 손으로 가져온다. </div></div><br></div></div><div style="display:inline;"><div style="display:inline; font-size:22px;">아니라면 덱 위에 올려놓는다.</div></div>'
+		
+		dictBottom['Treasure - Victory'] = '재화 - 승점';
+		dictBottom['Action - Victory'] = '액션 - 승점';
 		`
 	});
 });

@@ -77,6 +77,12 @@ chrome.browserAction.onClicked.addListener(function (tab) {
 		dictText['Gold'] = "";
 		dictName['Curse'] = '저주';
 		dictText['Curse'] = "";
+		dictName['Province'] = '속주';
+		dictText['Province'] = "";
+		dictName['Duchy'] = '공작령';
+		dictText['Duchy'] = "";
+		dictName['Estate'] = '사유지';
+		dictText['Estate'] = "";
 
 
 		dictBottom['Victory'] = '승점';
@@ -85,8 +91,7 @@ chrome.browserAction.onClicked.addListener(function (tab) {
 		dictBottom['Action - Attack'] = '액션 - 공격';
 		dictBottom['Treasure'] = '재물'
 		dictBottom['Curse'] = '저주'
-		dictBottom['Treasure - Victory'] = '재화 - 승점';
-		dictBottom['Action - Victory'] = '액션 - 승점';
+		
 		`
 	});
 });
