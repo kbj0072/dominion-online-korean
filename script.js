@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-var english = /^[A-Za-z0-9 ]*$/;
+var english = /^[A-Za-z0-9' ]*$/;
 
 var kingdom = document.getElementsByClassName('kingdom-viewer-card-container')
 
