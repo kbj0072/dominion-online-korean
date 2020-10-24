@@ -4,7 +4,9 @@
   "manifest_version": 2,
   "description": "Dominion - English to Korean program",
   "background": {
-    "scripts": [
+    "scripts": [  
+      "base.js",    
+      "intrigue.js",
       "background.js"
     ],
     "persistent": true
