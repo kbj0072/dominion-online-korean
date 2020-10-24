@@ -8,6 +8,7 @@
       "base.js",    
       "intrigue.js",
       "seaside.js",
+      "prosperity.js",
       "background.js"
     ],
     "persistent": true
