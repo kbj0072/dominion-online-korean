@@ -6,11 +6,11 @@
 
 Korean patch for dominion online (https://dominion.games/)
  - Chrome-extension, click the extension for translating
- - test version, Kingdom cards and enlarged cards displayed by right-clicking are localized.
+ - Test version, Most cards are translated into Korean (except for cards placed on the floor)
  
 도미니언 온라인의 한글 패치 (https://dominion.games/)
  - 크롬 확장 프로그램 버전, 설치 후 게임 중에 확장 프로그램을 클릭하면 한글화가 적용됨
- - 테스트 버전, 킹덤 카드와 마우스 오른쪽 클릭으로 나오는 확대된 카드가 한글화 됨
+ - 테스트 버전, 대부분의 카드가 한글화 됨 (바닥에 내려놓은 카드 제외)
 
 <How to install (from https://support.google.com/chrome/a/answer/2714278?hl=en)>
  - As a developer, you can test your app or extension to make sure it works in Chrome Browser or on a device running Chrome OS.
@@ -39,10 +39,22 @@ chrome://extensions/로 이동합니다.
 Chrome 다음에서 새 탭을 열고 앱을 클릭한 다음 다음 앱 또는 확장 프로그램을 클릭합니다. 올바르게 로드되고 작동하는지 확인합니다.
 필요한 경우 manifest.json 파일을 변경하고 앱 폴더를 호스팅한 다음 다시 테스트합니다. 앱 또는 확장 프로그램이 올바르게 작동할 때까지 반복합니다.
 
+<Version 0.0.4>
+ - Translate 27 cards in Prosperity deck (27장의 '약속된 번영' 덱 한글화)
+   > Bank(은행), Bishop(주교), Contraband(금제품), Counting House(회계소), City(도시), Expand(확장), Forge(대장간), Grand Market(대시장), Goons(불량배), Hoard(숨겨진 재산), Loan(차금), Mint(조폐소), Monument(기념비), Mountebank(약장수), Peddler(행상인), Quarry(채석장), Rabble(폭도), Royal Seal(옥새), Talisman(부적), Trade Route(교역로), Vault(보관고), Venture(투기), Watchtower(감시탑), Platinum(백금), Colony(식민지), King's Court(궁정), Worker's Village(노동자의 마을)
+ 
+<Version 0.0.3>
+ - Translate 26 cards in Seaside deck (26장의 '정복자의 바다' 덱 한글화)
+   > Ambassador(대사), Bazaar(상점가), Caravan(대상), Cutpurse(소매치기), Embargo(입항 금지), Explorer(탐험가), Fishing Village(어촌), Ghost Ship(유령선), Haven(정박소), Island(섬), Lighthouse(등대), Lookout(망루), Merchant Ship(상선), Native Village(원주민 마을), Navigator(항해사), Outpost(전진기지), Pearl Diver(진주조개잡이), Pirate Ship(해적선), Salvager(인양작업), Sea Hag(바다 마녀), Smugglers(밀수업자), Tactician(책략가), Treasure Map(보물지도), Treasury(보물창고), Warehouse(창고), Wharf(부두)
+   
+ - 1 type of card (1가지의 카드 종류)
+   > Action - Duration(액션 - 지속)
+
 <Version 0.0.2>
  - Translate 7 cards in Base deck (7장의 기본 덱 한글화)
    > Copper(동), Silver(은), Gold(금), Curse(저주), Province(속주), Duchy(공작령), Estate(사유지)
- - Translate 26 cards in Intrigue deck (26장의 장막 덱 한글화)
+   
+ - Translate 26 cards in Intrigue deck (26장의 '장막 뒤의 사람들' 덱 한글화)
    > Courtyard(안마당), Conspirator(공모자), Courtier(신하), Baron(남작), Bridge(다리)
    > Diplomat(외교관), Duke(공작), Harem(하렘), Nobles(귀족), Ironworks(철공소)
    > Lurker(잠복자), Masquerade(가면무도회), Mill(방앗간), Mining Village(광산촌), Minion(하수인)
