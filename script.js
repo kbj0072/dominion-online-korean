@@ -6,13 +6,16 @@ var english = /^[A-Za-z0-9 ]*$/;
 
 var kingdom = document.getElementsByClassName('kingdom-viewer-card-container')
 
+var timeout_delay = 20;
+
 if (kingdom.length == 0) {
 	alert("Error: No card data...");
 }
 else {
-	var kingdom = document.getElementsByClassName('kingdom-viewer-card-container')
 	for(var i=0; i< kingdom.length; ++i) {
-		var card_name = kingdom[i].getElementsByClassName('full-card-name');
+		var full_card = kingdom[i].getElementsByClassName('full-card');
+		full_card[0].addEventListener('contextmenu', function(){setTimeout(full_card_translate, timeout_delay);}, false)
+		var card_name = full_card[0].getElementsByClassName('full-card-name');
 		var original_name = card_name[0].innerText.trim();
 		var changed_name = dictName[original_name];
 		if ( changed_name != null && english.test(original_name) ) {
@@ -29,10 +32,24 @@ else {
 	}
 }
 
+var mini_card_list = document.getElementsByClassName("mini-card");
+
+if (mini_card_list.length != 0) {
+	for(var i=0; i< mini_card_list.length; ++i) {
+		var card_name = mini_card_list[i].getElementsByClassName('full-card-name');
+		var original_name = card_name[0].innerText.trim();
+		var changed_name = dictName[original_name];
+		if ( changed_name != null && english.test(original_name) ) {
+			card_name[0].innerText = changed_name;
+		}
+	}
+}
+
 function check_play_cards() {
-	var my_visible_hand = document.getElementsByClassName('my-visible-hand')
+	var my_visible_hand = document.getElementsByClassName('my-visible-hand');
 	for(var i=0; i< my_visible_hand.length; ++i) {
-		var full_card = my_visible_hand[i].getElementsByClassName('full-card')
+		var full_card = my_visible_hand[i].getElementsByClassName('full-card');
+		full_card[0].addEventListener('contextmenu', function(){setTimeout(full_card_translate, timeout_delay);}, false)
 		var card_name = full_card[0].getElementsByClassName('full-card-name');
 		var original_name = card_name[0].innerText.trim();
 		var changed_name = dictName[original_name];
@@ -84,7 +101,7 @@ chrome.storage.local.get(["timer_state", "timerId"], function(items) {
 	}
 	var mini_card_list = document.getElementsByClassName("mini-card");
 	for (var i=0; i< mini_card_list.length; ++i) {
-		mini_card_list[i].addEventListener('contextmenu', function(){setTimeout(full_card_translate,10);}, false)		
+		mini_card_list[i].addEventListener('contextmenu', function(){setTimeout(full_card_translate, timeout_delay);}, false)		
 	}
 	var id = setInterval(check_play_cards, 300);
 	console.log("setInterval: " + id);
