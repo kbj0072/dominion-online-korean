@@ -6,8 +6,10 @@ var english = /^[A-Za-z0-9 ]*$/;
 
 var kingdom = document.getElementsByClassName('kingdom-viewer-card-container')
 
-if (kingdom.length == 0)
+if (kingdom.length == 0) {
 	alert("Error: No card data...");
+	return
+}
 else {
 	var kingdom = document.getElementsByClassName('kingdom-viewer-card-container')
 	for(var i=0; i< kingdom.length; ++i) {
