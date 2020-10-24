@@ -8,7 +8,6 @@ var kingdom = document.getElementsByClassName('kingdom-viewer-card-container')
 
 if (kingdom.length == 0) {
 	alert("Error: No card data...");
-	return
 }
 else {
 	var kingdom = document.getElementsByClassName('kingdom-viewer-card-container')
