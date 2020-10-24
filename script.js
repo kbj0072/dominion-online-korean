@@ -37,20 +37,20 @@ else {
 var mini_card_list = document.getElementsByClassName("mini-card");
 
 if (mini_card_list.length > 0) {
-	console.log("mini_card_list count: " + mini_card_list.length);
+	//console.log("mini_card_list count: " + mini_card_list.length);
 	for(var i=0; i< mini_card_list.length; ++i) {
 		mini_card_list[i].addEventListener('contextmenu', function(){setTimeout(full_card_translate, timeout_delay);}, false);
 		var card_name = mini_card_list[i].getElementsByClassName('full-card-name');
 		var original_name = card_name[0].innerText.trim();
 		var changed_name = dictName[original_name];
-		console.log(original_name + " >> " + changed_name);
+		//console.log(original_name + " >> " + changed_name);
 		if ( changed_name != null && english.test(original_name) ) {
 			card_name[0].innerText = changed_name;
 		}
 	}
 }
 else {
-	console.log("No Mini card...");
+	//console.log("No Mini card...");
 }
 
 function check_play_cards() {
