@@ -91,6 +91,39 @@ if (landscape.length > 0) {
 	landscape_translate();
 }
 
+
+
+
+function micro_card_translate() {
+	var micro_card = document.getElementsByClassName("micro-card");
+	for(var i=0; i< micro_card.length; ++i) {
+		var card_name = micro_card[i].getElementsByClassName("full-card-name");
+		if (card_name.length > 0) {
+			var original_name = card_name[0].innerText.trim();
+			var changed_name = dictName[original_name];
+			//console.log(original_name + " >> " + changed_name);
+			if ( changed_name != null && english.test(original_name) ) {
+				card_name[0].innerText = changed_name;
+				// var card_text = landscape[i].getElementsByClassName('landscape-text');
+				// var new_text = dictText[original_name];
+				// if (card_text.length > 0 && new_text != null)
+				// 	card_text[0].innerHTML = new_text;
+			}
+		}
+	}
+}
+
+// it's like 'PRIZE'
+var micro_card = document.getElementsByClassName("micro-card");
+if (micro_card.length > 0) {
+	for(var i=0; i< micro_card.length; ++i) {
+		micro_card[i].addEventListener('contextmenu', function(){setTimeout(micro_card_translate, timeout_delay);}, false);
+	}
+	micro_card_translate();
+}
+
+
+
 function check_play_cards() {
 	var my_visible_hand = document.getElementsByClassName('my-visible-hand');
 	for(var i=0; i< my_visible_hand.length; ++i) {
