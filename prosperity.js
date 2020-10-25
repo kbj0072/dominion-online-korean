@@ -24,7 +24,7 @@ chrome.browserAction.onClicked.addListener(function (tab) {
 		dictName['Goons'] = '불량배';
 		dictName['Hoard'] = '숨겨진 재산';
 		dictName["King's Court"] = '궁정';
-		dictName['Loan'] = '차금';
+		dictName['Loan'] = '빚';
 		dictName['Mint'] = '조폐소';
 		dictName['Monument'] = '기념비';
 		dictName['Mountebank'] = '약장수';
