@@ -105,9 +105,7 @@ function check_play_cards() {
 	}
 }
 
-function full_card_translate() {
-	var card_study_container = document.getElementsByClassName('card-study-container')[0]
-	var full_card = card_study_container.getElementsByClassName('full-card')
+function translate_cards(full_card) {
 	for(var i=0; i< full_card.length; ++i) {
 		var card_name = full_card[i].getElementsByClassName('full-card-name');
 		var original_name = card_name[0].innerText.trim();
@@ -126,6 +124,18 @@ function full_card_translate() {
 	}
 }
 
+function full_card_translate() {
+	var card_study_container = document.getElementsByClassName('card-study-container')[0]
+	var full_card = card_study_container.getElementsByClassName('full-card')
+	translate_cards(full_card);
+	//reveal-container
+	var reveal_container = document.getElementsByClassName('reveal-container')
+	for (var i=0; i<reveal_container.length; ++i) {
+		var full_card = reveal_container[i].getElementsByClassName('full-card')
+		translate_cards(full_card);
+	}
+}
+
 chrome.storage.local.get(["timer_state", "timerId"], function(items) {
 	if (typeof items.timer_state == 'undefined') {
 		var temp_items = {"timer_state": false, "timerId": 0};
@@ -135,10 +145,10 @@ chrome.storage.local.get(["timer_state", "timerId"], function(items) {
 	
 	if (items.timer_state == true) {
 		clearInterval(items.timerId);
-		console.log("clearInterval: " + items.timerId);
+		//console.log("clearInterval: " + items.timerId);
 	}
 	var id = setInterval(check_play_cards, 300);
-	console.log("setInterval: " + id);
+	//console.log("setInterval: " + id);
 	var temp_items = {"timer_state": true, "timerId": id};
 	chrome.storage.local.set(temp_items, function() {});
  });
