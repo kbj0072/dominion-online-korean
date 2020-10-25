@@ -8,10 +8,7 @@ var kingdom = document.getElementsByClassName('kingdom-viewer-card-container')
 
 var timeout_delay = 20;
 
-if (kingdom.length == 0) {
-	alert("Error: No card data...");
-}
-else {
+if (kingdom.length > 0) {
 	for(var i=0; i< kingdom.length; ++i) {
 		var full_card = kingdom[i].getElementsByClassName('full-card');
 		if (typeof full_card[0] != 'undefined') {
@@ -35,17 +32,28 @@ else {
 }
 
 var mini_card_list = document.getElementsByClassName("mini-card");
+var special_mini = false;
 
-if (mini_card_list.length > 0) {
+if (mini_card_list.length > 0) {	
 	//console.log("mini_card_list count: " + mini_card_list.length);
 	for(var i=0; i< mini_card_list.length; ++i) {
 		mini_card_list[i].addEventListener('contextmenu', function(){setTimeout(full_card_translate, timeout_delay);}, false);
 		var card_name = mini_card_list[i].getElementsByClassName('full-card-name');
-		var original_name = card_name[0].innerText.trim();
-		var changed_name = dictName[original_name];
-		//console.log(original_name + " >> " + changed_name);
-		if ( changed_name != null && english.test(original_name) ) {
-			card_name[0].innerText = changed_name;
+		if (card_name.length > 0) {
+			var original_name = card_name[0].innerText.trim();
+			var changed_name = dictName[original_name];
+			//console.log(original_name + " >> " + changed_name);
+			if ( changed_name != null && english.test(original_name) ) {
+				card_name[0].innerText = changed_name;
+			}
+			var bottom_text = mini_card_list[i].getElementsByClassName('pile-bottom-text');
+			if (bottom_text.length > 0) {
+				var original_text = bottom_text[0].innerText;
+				var changed_text = dictBottom[original_text]
+				if (typeof changed_text != 'undefined')
+					bottom_text[0].innerText = changed_text;
+				special_mini = true;
+			}
 		}
 	}
 }
@@ -57,16 +65,18 @@ function landscape_translate() {
 	var landscape = document.getElementsByClassName("landscape");
 	for(var i=0; i< landscape.length; ++i) {
 		var card_name = landscape[i].getElementsByClassName('landscape-name');
-		var original_name = card_name[0].innerText.trim();
-		var changed_name = dictName[original_name];
-		//console.log(original_name + " >> " + changed_name);
-		if ( changed_name != null && english.test(original_name) ) {
-			card_name[0].innerText = changed_name;
-			var card_text = landscape[i].getElementsByClassName('landscape-text');
-			var new_text = dictText[original_name];
-			//console.log(card_text);
-			if (card_text.length > 0 && new_text != null)
-				card_text[0].innerHTML = new_text;
+		if (card_name.length > 0) {
+			var original_name = card_name[0].innerText.trim();
+			var changed_name = dictName[original_name];
+			//console.log(original_name + " >> " + changed_name);
+			if ( changed_name != null && english.test(original_name) ) {
+				card_name[0].innerText = changed_name;
+				var card_text = landscape[i].getElementsByClassName('landscape-text');
+				var new_text = dictText[original_name];
+				//console.log(card_text);
+				if (card_text.length > 0 && new_text != null)
+					card_text[0].innerHTML = new_text;
+			}
 		}
 	}
 }
@@ -105,6 +115,22 @@ function check_play_cards() {
 	}
 }
 
+function check_mini_cards() {
+	var mini_card_list = document.getElementsByClassName("mini-card");
+	for(var i=0; i< mini_card_list.length; ++i) {
+		var bottom_text = mini_card_list[i].getElementsByClassName('pile-bottom-text');
+		var card_name = mini_card_list[i].getElementsByClassName('full-card-name');
+		if (bottom_text.length > 0) {
+			var img_name = mini_card_list[i].getElementsByClassName('mini-card-art')[0].style.backgroundImage.split('/').slice(-1)[0].slice(0,-2);
+			var changed_name = dictName[img_name];
+			if (typeof changed_name != 'undefined') {
+				card_name[0].innerText = changed_name;
+				//console.log(img_name + " >> " + changed_name);
+			}
+		}
+	}
+}
+
 function translate_cards(full_card) {
 	for(var i=0; i< full_card.length; ++i) {
 		var card_name = full_card[i].getElementsByClassName('full-card-name');
@@ -136,19 +162,25 @@ function full_card_translate() {
 	}
 }
 
-chrome.storage.local.get(["timer_state", "timerId"], function(items) {
+chrome.storage.local.get(["timer_state", "timerId1", "timerId2"], function(items) {
 	if (typeof items.timer_state == 'undefined') {
-		var temp_items = {"timer_state": false, "timerId": 0};
+		var temp_items = {"timer_state": false, "timerId1": 0, "timerId2": 0};
 		chrome.storage.local.set(temp_items, function() {});
 		items = temp_items;
 	}
 	
 	if (items.timer_state == true) {
-		clearInterval(items.timerId);
+		if (items.timerId1 != 0)
+			clearInterval(items.timerId1);
+		if (items.timerId2 != 0)
+			clearInterval(items.timerId2);
 		//console.log("clearInterval: " + items.timerId);
 	}
-	var id = setInterval(check_play_cards, 300);
-	//console.log("setInterval: " + id);
-	var temp_items = {"timer_state": true, "timerId": id};
+	var id1 = setInterval(check_play_cards, 300);
+	var id2 = 0;
+	if (special_mini)
+		id2 = setInterval(check_mini_cards, 1000);
+	//console.log("setInterval: " + id1 + ", " + id2);
+	var temp_items = {"timer_state": true, "timerId1": id1, "timerId2": id2};
 	chrome.storage.local.set(temp_items, function() {});
  });
