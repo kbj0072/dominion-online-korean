@@ -175,6 +175,9 @@ chrome.browserAction.onClicked.addListener(function (tab) {
 		dictName['kings-castle.jpg'] = '왕의 성';
 		dictName['rocks.jpg'] = '바위';
 		dictName['bustling-village.jpg'] = '북적거리는 마을';
+		dictName['plunder.jpg'] = '약탈품';
+		dictName['fortune.jpg'] = '행운';
+		dictName['emporium.jpg'] = '해외 상관';
 		
 		dictBottom['Mixed'] = '혼합';
 		dictBottom['Split'] = '분할';
