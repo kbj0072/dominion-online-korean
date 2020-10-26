@@ -11,6 +11,7 @@
       "prosperity.js",
       "empires.js",
       "cornucorpia.js",
+      "hinterland.js",
       "background.js"
     ],
     "persistent": true

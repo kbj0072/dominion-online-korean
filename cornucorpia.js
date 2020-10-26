@@ -28,7 +28,7 @@ chrome.browserAction.onClicked.addListener(function (tab) {
 		dictName['Bag of Gold'] = '금화 주머니';
 		dictName['Princess'] = '공주';
 		dictName['Trusty Steed'] = '명마';
-		dictName['Diadem'] = '왕관';
+		dictName['Diadem'] = '왕관띠';
 		dictName['Followers'] = '추종자들';
 
 
