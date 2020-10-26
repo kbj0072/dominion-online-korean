@@ -1,6 +1,6 @@
 {
   "name": "Dominion_kor",
-  "version": "0.0.7",
+  "version": "0.0.6",
   "manifest_version": 2,
   "description": "Dominion - English to Korean program",
   "background": {
@@ -9,7 +9,7 @@
       "intrigue.js",
       "seaside.js",
       "prosperity.js",
-	    "empires.js",
+      "empires.js",
       "cornucorpia.js",
       "background.js"
     ],
