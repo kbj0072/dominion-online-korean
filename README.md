@@ -39,12 +39,6 @@ chrome://extensions/로 이동합니다.
 Chrome 다음에서 새 탭을 열고 앱을 클릭한 다음 다음 앱 또는 확장 프로그램을 클릭합니다. 올바르게 로드되고 작동하는지 확인합니다.
 필요한 경우 manifest.json 파일을 변경하고 앱 폴더를 호스팅한 다음 다시 테스트합니다. 앱 또는 확장 프로그램이 올바르게 작동할 때까지 반복합니다.
 
-<Existing bug>
- - Cards enlarged by right-clicking in a slow device/internet environment are not translated. ex) Using 'Kiwi browser' in Android smartphone
- 
-<현재 버전에 있는 버그>
- - 장치 또는 인터넷이 느린 환경에서 오른쪽 클릭으로 확대한 카드의 번역이 이루어지지 않음. 예시) 안드로이드 스마트폰에서 '키위 브라우저'를 사용하여 게임할 경우
-
 <Version 0.0.6>
  - Translate 18 cards in Empires deck (18장의 '풍요의 뿔' 덱 한글화)
   > Fairgrounds(박람회장), Farming Village(농촌), Fortune Teller(점술가), Hamlet(작은 마을), Harvest(수확), Horse Traders(말 상인), Horn of Plenty(풍요의 뿔), Hunting Party(수렵단), Jester(광대), Menagerie(동물원 ), Remake(개작), Tournament(기사 무술 대회), Young Witch(젊은 마녀), Bag of Gold(금화 주머니), Princess(공주), Trusty Steed(명마), Diadem(왕관), Followers(추종자들)
