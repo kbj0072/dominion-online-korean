@@ -12,6 +12,7 @@
       "empires.js",
       "cornucorpia.js",
       "hinterland.js",
+      "darkages.js",
       "background.js"
     ],
     "persistent": true
