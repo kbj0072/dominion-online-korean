@@ -13,6 +13,7 @@
       "cornucorpia.js",
       "hinterland.js",
       "darkages.js",
+      "guilds.js",
       "background.js"
     ],
     "persistent": true
