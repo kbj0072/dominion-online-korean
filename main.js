@@ -1,6 +1,6 @@
 LANGUAGE.getType[Types.ACTION] = "액션";
 LANGUAGE.getType[Types.TREASURE] = "재물";
-LANGUAGE.getType[Types.ATTACK] = "공격";
+LANGUAGE.getType[Types.ATTACK] = "공격 ";
 LANGUAGE.getType[Types.CURSE] = "저주";
 LANGUAGE.getType[Types.DURATION] = "지속";
 LANGUAGE.getType[Types.EVENT] = "이벤트";
@@ -35,3 +35,8 @@ LANGUAGE.getType[Types.COMMAND] = "명령";
 LANGUAGE.getPileMarker[PileMarkerTypes.BANE] = "골칫거리";
 LANGUAGE.getPileMarker[PileMarkerTypes.SPLIT] = "분할";
 LANGUAGE.getPileMarker[PileMarkerTypes.MIXED] = "혼합";
+
+
+
+LANGUAGE.getGameButton[GameButtons.AUTOPLAY_TREASURES]="자동으로 재물 플레이";
+LANGUAGE.getDeclineButtonText[DeclineButtonIds.END_BUY_PHASE]="구매 완료";
