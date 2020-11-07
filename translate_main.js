@@ -16,6 +16,7 @@ addHeader("cornucorpia.js");
 addHeader("hinterland.js");
 addHeader("darkages.js");
 addHeader("guilds.js");
+addHeader("adventure.js");
 
 
 
