@@ -17,6 +17,7 @@
     "guilds.js",
     "adventure.js",
     "alchemy.js",
+    "promo.js",
 
     "card_down.mp3",
     "card_get.mp3",

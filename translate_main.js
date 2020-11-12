@@ -18,6 +18,7 @@ addHeader("darkages.js");
 addHeader("guilds.js");
 addHeader("adventure.js");
 addHeader("alchemy.js");
+addHeader("promo.js");
 
 
 
