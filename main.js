@@ -38,5 +38,14 @@ LANGUAGE.getPileMarker[PileMarkerTypes.MIXED] = "혼합";
 
 
 
-LANGUAGE.getGameButton[GameButtons.AUTOPLAY_TREASURES]="자동으로 재물 플레이";
-LANGUAGE.getDeclineButtonText[DeclineButtonIds.END_BUY_PHASE]="구매 완료";
+LANGUAGE.getGameButton[GameButtons.AUTOPLAY_TREASURES] = "자동으로 재물 플레이";
+LANGUAGE.getDeclineButtonText[DeclineButtonIds.END_BUY_PHASE] = "구매 완료";
+LANGUAGE.getDeclineButtonText[DeclineButtonIds.END_ACTION_PHASE] = "액션 완료";
+
+
+LANGUAGE.getDeclineButtonText[DoneButtonIds.TRASH] = "폐기";
+LANGUAGE.getDeclineButtonText[DoneButtonIds.DONE_TRASHING] = "폐기 완료";
+
+LANGUAGE.getLogEntry[LogEntryNames.TRASH] = "Argument0 폐기 Argument1.";
+
+LANGUAGE.getCardMode[CardModes.DOCTOR_TRASH] = "폐기";

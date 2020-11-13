@@ -1,22 +1,22 @@
-LANGUAGE.getCardName['Fairgrounds'].singular = '박람회장';
-LANGUAGE.getCardName['Farming Village'].singular = '농촌';
-LANGUAGE.getCardName['Fortune Teller'].singular = '점술가';
-LANGUAGE.getCardName['Hamlet'].singular = '작은 마을';
-LANGUAGE.getCardName['Harvest'].singular = '수확';
-LANGUAGE.getCardName['Horse Traders'].singular = '말 상인';
-LANGUAGE.getCardName[CardNames.HORN_OF_PLENTY].singular = '풍요의 뿔';
-LANGUAGE.getCardName['Hunting Party'].singular = '수렵단';
-LANGUAGE.getCardName['Jester'].singular = '광대';
-LANGUAGE.getCardName['Menagerie'].singular = '동물원 ';
-LANGUAGE.getCardName['Remake'].singular = '개작';
-LANGUAGE.getCardName['Tournament'].singular = '기사 무술 대회';
-LANGUAGE.getCardName['Young Witch'].singular = '젊은 마녀';
-LANGUAGE.getCardName[CardNames.BAG_OF_GOLD].singular = '금화 주머니';
-LANGUAGE.getCardName['Princess'].singular = '공주';
-LANGUAGE.getCardName['Trusty Steed'].singular = '명마';
-LANGUAGE.getCardName['Diadem'].singular = '왕관띠';
-LANGUAGE.getCardName['Followers'].singular = '추종자들';
-LANGUAGE.getCardName[CardNames.PRIZE_PILE].singular = '상품';
+translateName(LANGUAGE.getCardName['Fairgrounds'], '박람회장');
+translateName(LANGUAGE.getCardName['Farming Village'], '농촌');
+translateName(LANGUAGE.getCardName['Fortune Teller'], '점술가');
+translateName(LANGUAGE.getCardName['Hamlet'], '작은 마을');
+translateName(LANGUAGE.getCardName['Harvest'], '수확');
+translateName(LANGUAGE.getCardName['Horse Traders'], '말 상인');
+translateName(LANGUAGE.getCardName[CardNames.HORN_OF_PLENTY], '풍요의 뿔');
+translateName(LANGUAGE.getCardName['Hunting Party'], '수렵단');
+translateName(LANGUAGE.getCardName['Jester'], '광대');
+translateName(LANGUAGE.getCardName['Menagerie'], '동물원 ');
+translateName(LANGUAGE.getCardName['Remake'], '개작');
+translateName(LANGUAGE.getCardName['Tournament'], '기사 무술 대회');
+translateName(LANGUAGE.getCardName['Young Witch'], '젊은 마녀');
+translateName(LANGUAGE.getCardName[CardNames.BAG_OF_GOLD], '금화 주머니');
+translateName(LANGUAGE.getCardName['Princess'], '공주');
+translateName(LANGUAGE.getCardName['Trusty Steed'], '명마');
+translateName(LANGUAGE.getCardName['Diadem'], '왕관띠');
+translateName(LANGUAGE.getCardName['Followers'], '추종자들');
+translateName(LANGUAGE.getCardName[CardNames.PRIZE_PILE], '상품');
 
 
 

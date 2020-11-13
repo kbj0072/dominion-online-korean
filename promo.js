@@ -1,13 +1,13 @@
-LANGUAGE.getCardName['Sauna'].singular = '사우나';
-LANGUAGE.getCardName['Black Market'].singular = '암시장';
-LANGUAGE.getCardName['Envoy'].singular = '사절';
-LANGUAGE.getCardName['Governor'].singular = '총독';
-LANGUAGE.getCardName['Prince'].singular = '왕자';
-LANGUAGE.getCardName['Walled Village'].singular = '벽이 있는 마을';
-LANGUAGE.getCardName['Dismantle'].singular = '분해';
-LANGUAGE.getCardName['Captain'].singular = '선장';
-LANGUAGE.getCardName['Church'].singular = '교회';
-LANGUAGE.getCardName['Summon'].singular = '소환';
+translateName(LANGUAGE.getCardName['Sauna'], '사우나');
+translateName(LANGUAGE.getCardName['Black Market'], '암시장');
+translateName(LANGUAGE.getCardName['Envoy'], '사절');
+translateName(LANGUAGE.getCardName['Governor'], '총독');
+translateName(LANGUAGE.getCardName['Prince'], '왕자');
+translateName(LANGUAGE.getCardName['Walled Village'], '벽이 있는 마을');
+translateName(LANGUAGE.getCardName['Dismantle'], '분해');
+translateName(LANGUAGE.getCardName['Captain'], '선장');
+translateName(LANGUAGE.getCardName['Church'], '교회');
+translateName(LANGUAGE.getCardName['Summon'], '소환');
 
 
 LANGUAGE.getCardText['Sauna'] = '<div style="font-weight: bold;"><div style="line-height:26px;"><div style="display:inline;"><div style="display:inline; font-size:27px;">+카드 1장</div></div></br><div style="display:inline;"><div style="display:inline; font-size:27px;">+액션 1번</div></div></br></div></div><div style="position:relative; top:-2px;"><div style="line-height:19.5px;"><div style="display:inline;"><div style="display:inline; font-size:20px;">손패에 아반토 카드가 있다면</div></div></br><div style="display:inline;"><div style="display:inline; font-size:20px;">추가로 사용 할 수 있습니다.</div></div></br></div></div><div class="horizontal-line" style="width:200px; height:3px;margin-top:2px;"></div><div style="position:relative; top:-1px;"><div style="line-height:19.5px;"><div style="display:inline;"><div style="display:inline; font-size:20px;">이 카드를 사용했을 때,</div></div></br><div style="display:inline;"><div style="display:inline; font-size:20px;">은을 사용 한다면 손패에서</div></div></br><div style="display:inline;"><div style="display:inline; font-size:20px;">1장을 폐기 할 수 있습니다.</div></div></br></div></div>';

@@ -1,15 +1,15 @@
-LANGUAGE.getCardName['Alchemist'].singular = '연금술사';
-LANGUAGE.getCardName['Apothecary'].singular = '약제사';
-LANGUAGE.getCardName['Apprentice'].singular = '견습마법사';
-LANGUAGE.getCardName['Familiar'].singular = '사역마';
-LANGUAGE.getCardName['Golem'].singular = '골렘';
-LANGUAGE.getCardName['Herbalist'].singular = '약초상';
-LANGUAGE.getCardName[CardNames.PHILOSOPHERS_STONE].singular = '현자의 돌';
-LANGUAGE.getCardName['Possession'].singular = '지배 ';
-LANGUAGE.getCardName['Scrying Pool'].singular = '예언의 항아리';
-LANGUAGE.getCardName['Transmute'].singular = '변성';
-LANGUAGE.getCardName['University'].singular = '대학';
-LANGUAGE.getCardName['Vineyard'].singular = '포도원';
+translateName(LANGUAGE.getCardName['Alchemist'], '연금술사');
+translateName(LANGUAGE.getCardName['Apothecary'], '약제사');
+translateName(LANGUAGE.getCardName['Apprentice'], '견습마법사');
+translateName(LANGUAGE.getCardName['Familiar'], '사역마');
+translateName(LANGUAGE.getCardName['Golem'], '골렘');
+translateName(LANGUAGE.getCardName['Herbalist'], '약초상');
+translateName(LANGUAGE.getCardName[CardNames.PHILOSOPHERS_STONE], '현자의 돌');
+translateName(LANGUAGE.getCardName['Possession'], '지배 ');
+translateName(LANGUAGE.getCardName['Scrying Pool'], '예언의 항아리');
+translateName(LANGUAGE.getCardName['Transmute'], '변성');
+translateName(LANGUAGE.getCardName['University'], '대학');
+translateName(LANGUAGE.getCardName['Vineyard'], '포도원');
 
 
 LANGUAGE.getCardText['Alchemist'] = '<div style="position:relative; top:0px;"><div style="font-weight: bold;"><div style="line-height:28px;"><div style="display:inline;"><div style="display:inline; font-size:28px;">+카드 2장</div></div></br><div style="display:inline;"><div style="display:inline; font-size:28px;">+액션 1번</div></div></br></div></div></div><div style="position:relative; top:7px;"><div style="line-height:22px;"><div style="display:inline;"><div style="display:inline; font-size:20px;">이번 차례에 포션을 사용했다면,</div></div></br><div style="display:inline;"><div style="display:inline; font-size:22px;">이 카드를 다시 덱 맨 위로</div></div></br><div style="display:inline;"><div style="display:inline; font-size:22px;">되돌릴 수 있습니다.</div></div></br></br></div></div><div class="horizontal-line" style="width:200px; height:3px;margin-top:-96px;"></div>';

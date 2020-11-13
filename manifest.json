@@ -5,6 +5,7 @@
   "description": "Dominion - English to Korean program",
 
   "web_accessible_resources": [
+    "util.js",
     "main.js",
     "base.js",
     "intrigue.js",

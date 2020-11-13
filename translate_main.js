@@ -6,6 +6,8 @@ function addHeader(file_name){
 	(document.head).appendChild(script);
 }
 
+
+addHeader("util.js");
 addHeader("main.js");
 addHeader("base.js");
 addHeader("intrigue.js");
