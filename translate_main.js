@@ -21,6 +21,7 @@ addHeader("guilds.js");
 addHeader("adventure.js");
 addHeader("alchemy.js");
 addHeader("promo.js");
+addHeader("nocturne.js");
 
 
 
