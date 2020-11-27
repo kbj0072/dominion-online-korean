@@ -23,6 +23,8 @@ addHeader("alchemy.js");
 addHeader("promo.js");
 addHeader("nocturne.js");
 
+addHeader("menagerie.js");
+
 
 
 

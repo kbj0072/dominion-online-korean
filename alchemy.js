@@ -1,3 +1,4 @@
+translateName(LANGUAGE.getCardName[CardNames.POTION], '포션');
 translateName(LANGUAGE.getCardName['Alchemist'], '연금술사');
 translateName(LANGUAGE.getCardName['Apothecary'], '약제사');
 translateName(LANGUAGE.getCardName['Apprentice'], '견습마법사');

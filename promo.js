@@ -1,3 +1,4 @@
+translateName(LANGUAGE.getCardName[CardNames.BLACK_MARKET_PILE], "암시장 덱");
 translateName(LANGUAGE.getCardName['Sauna'], '사우나');
 translateName(LANGUAGE.getCardName['Black Market'], '암시장');
 translateName(LANGUAGE.getCardName['Envoy'], '사절');
@@ -8,6 +9,7 @@ translateName(LANGUAGE.getCardName['Dismantle'], '분해');
 translateName(LANGUAGE.getCardName['Captain'], '선장');
 translateName(LANGUAGE.getCardName['Church'], '교회');
 translateName(LANGUAGE.getCardName['Summon'], '소환');
+translateName(LANGUAGE.getCardName[CardNames.AVANTO], '아반토');
 
 
 LANGUAGE.getCardText['Sauna'] = '<div style="font-weight: bold;"><div style="line-height:26px;"><div style="display:inline;"><div style="display:inline; font-size:27px;">+카드 1장</div></div></br><div style="display:inline;"><div style="display:inline; font-size:27px;">+액션 1번</div></div></br></div></div><div style="position:relative; top:-2px;"><div style="line-height:19.5px;"><div style="display:inline;"><div style="display:inline; font-size:20px;">손패에 아반토 카드가 있다면</div></div></br><div style="display:inline;"><div style="display:inline; font-size:20px;">추가로 사용 할 수 있습니다.</div></div></br></div></div><div class="horizontal-line" style="width:200px; height:3px;margin-top:2px;"></div><div style="position:relative; top:-1px;"><div style="line-height:19.5px;"><div style="display:inline;"><div style="display:inline; font-size:20px;">이 카드를 사용했을 때,</div></div></br><div style="display:inline;"><div style="display:inline; font-size:20px;">은을 사용 한다면 손패에서</div></div></br><div style="display:inline;"><div style="display:inline; font-size:20px;">1장을 폐기 할 수 있습니다.</div></div></br></div></div>';
@@ -22,3 +24,4 @@ LANGUAGE.getCardText['Captain'] = '<div style="position:relative; top:7px;"><div
 
 LANGUAGE.getCardText['Church'] = '<div style="font-weight: bold;"><div style="display:inline;"><div style="display:inline; font-size:28px;">+액션 1번</div></div></br></div><div style="position:relative; top:10px;"><div style="line-height:22px;"><div style="display:inline;"><div style="display:inline; font-size:16px;">손패에서 3장까지 뒷면으로 따로 둔다.</div></div></br><div style="display:inline;"><div style="display:inline; font-size:16px;">다음 턴을 시작할 때, 따로 둔 카드를</div></div></br><div style="display:inline;"><div style="display:inline; font-size:16px;">손패로 가져온다. 손패에서 카드 한 장을</div></div></br><div style="display:inline;"><div style="display:inline; font-size:16px;">폐기할 수 있다.</div></div></br></br></div></div>';
 LANGUAGE.getCardText['Summon'] = '<div style="display:inline;"><div style="display:inline; font-size:20px;">      이하의 액션 카드를 얻어서 따로 둡니다.<div class="card-text-coin-icon" style="transform:scale(0.18); top:5px; display: inline;left:24px;"><div class="card-text-coin-text-container" style="display:inline;"><div class="card-text-coin-text" style="color: black; display:inline; top:8px;">4</div></div></div></div></div></br><div style="display:inline;"><div style="display:inline; font-size:15px;">그러면, 자신의 다음 턴을 시작할 때 따로 둔 카드를 사용합니다.</div></div></br>';
+LANGUAGE.getCardText[CardNames.AVANTO] = '<div style="position:relative; top:-5px;"><div style="font-weight: bold;"><div style="line-height:28px;"><div style="display:inline;"><div style="display:inline; font-size:28px;">+카드 3장</div></div></br></div></div></div><div style="position:relative; top:10px;"><div style="line-height:22px;"><div style="display:inline;"><div style="display:inline; font-size:22px;">손패의 사우나를</div></div></br><div style="display:inline;"><div style="display:inline; font-size:22px;">사용할 수 있다.</div></div></br></div></div>';

@@ -1,4 +1,4 @@
-translateName(LANGUAGE.getCardName['Advisor'], '고문');
+translateName(LANGUAGE.getCardName['Advisor'], '간신배');
 translateName(LANGUAGE.getCardName['Baker'], '제빵사');
 translateName(LANGUAGE.getCardName['Butcher'], '도살자');
 translateName(LANGUAGE.getCardName['Candlestick Maker'], '촛대제작자');
