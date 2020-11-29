@@ -1,4 +1,3 @@
-translateName(LANGUAGE.getCardName['Wishing Well'], '소원의 우물');
 translateName(LANGUAGE.getCardName['Bank'], '은행');
 translateName(LANGUAGE.getCardName['Bishop'], '주교');
 translateName(LANGUAGE.getCardName['Contraband'], '금제품');
