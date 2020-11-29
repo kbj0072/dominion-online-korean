@@ -55,7 +55,7 @@ translateName(LANGUAGE.getCardName[CardNames.GAMBLE], '도박');
 translateName(LANGUAGE.getCardName[CardNames.PURSUE], '추격');
 translateName(LANGUAGE.getCardName[CardNames.RIDE], '승마');
 translateName(LANGUAGE.getCardName[CardNames.TOIL], '노역');
-translateName(LANGUAGE.getCardName[CardNames.ENHANCE], '향상');
+translateName(LANGUAGE.getCardName[CardNames.ENHANCE], '치장');
 translateName(LANGUAGE.getCardName[CardNames.MARCH], '행군');
 translateName(LANGUAGE.getCardName[CardNames.TRANSPORT], '운송');
 translateName(LANGUAGE.getCardName[CardNames.BANISH], '유배');

@@ -22,7 +22,7 @@ addHeader("adventure.js");
 addHeader("alchemy.js");
 addHeader("promo.js");
 addHeader("nocturne.js");
-
+addHeader("renaissance.js");
 addHeader("menagerie.js");
 
 
