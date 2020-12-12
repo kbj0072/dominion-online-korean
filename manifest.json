@@ -35,39 +35,9 @@
       "js": ["translate_main.js", "play_sound.js"]
     }
   ],
-
-  // "content_scripts": [
-  //   {
-  //     "matches": ["https://dominion.games/*"],
-  //     "run_at": "document_end",
-  //     "js": ["play_sound.js"]
-  //   }
-  // ],
-
-
-  // "background": {
-  //   "scripts": [  
-  //     "base.js",    
-  //     "intrigue.js",
-  //     "seaside.js",
-  //     "prosperity.js",
-  //     "empires.js",
-  //     "cornucorpia.js",
-  //     "hinterland.js",
-  //     "darkages.js",
-  //     "guilds.js",
-  //     "background.js"
-  //   ],
-  //   "persistent": true
-  // },
+  
   "browser_action": {
     "default_icon": "icon.png",
-    "default_title": "Translate!"
-  },
-  "permissions": [
-    // "https://*/*",
-    // "http://*/*",
-    "tabs",
-	"storage"
-  ]
+    "default_title": "도미니언 온라인 한글화"
+  }
 }
